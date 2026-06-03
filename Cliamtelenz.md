@@ -20,7 +20,6 @@ with **no build step**, designed for **GitHub Pages**.
 | **Type** | Static website (no framework, no build) |
 | **Pages** | Home, Privacy Policy, Terms of Service, Cookie Notice, 404 |
 | **Hosting** | GitHub Pages (serves from repo root) |
-| **Analytics** | Google Tag Manager `GTM-PRTLDT72` → GA4 `G-KNP3YWYREK` |
 | **Consent** | Silktide Consent Manager + Google Consent Mode v2 |
 | **Domain** | www.climatelenz.com |
 
@@ -71,7 +70,7 @@ cd Climatelenz
 # copy all site files into the repo root (including .nojekyll and .well-known/)
 git add -A
 git commit -m "Launch ClimateLenz site"
-git push
+git push origin main
 ```
 
 > ⚠️ The GitHub **web uploader skips dotfiles** — use `git` (above) so `.nojekyll` and
