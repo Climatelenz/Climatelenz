@@ -1,6 +1,9 @@
 <div align="center">
 
-#  ClimateLenz
+<img width="192" height="192" alt="android-chrome-192x192" src="https://github.com/user-attachments/assets/300b9bef-a6aa-4137-b156-9dab816b6812" />
+
+
+#  **ClimateLenz**
 
 **Fixed-price, fixed-timeline CSRD & ESRS reports — without the Big 4 invoice.**
 
@@ -61,6 +64,7 @@ with **no build step**, designed for **GitHub Pages**.
 ```
 
 ---
+<!--
 
 ## Deploy to GitHub Pages
 
@@ -98,7 +102,7 @@ Then:
 - A footer **"Cookie preferences"** link reopens the consent panel at any time.
 
 ---
-
+-->
 ## Privacy & security
 
 - ✅ **No third-party requests before consent** — fonts are system fonts (no Google Fonts call).
