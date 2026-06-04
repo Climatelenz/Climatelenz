@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.climatelenz.com/sitemap.xml
+Sitemap: https://climatelenz.com/sitemap.xml
