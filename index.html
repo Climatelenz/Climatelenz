@@ -766,11 +766,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 .tiers {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
   align-items: stretch;
 }
-@media (max-width: 980px) { .tiers { grid-template-columns: 1fr; } }
+@media (max-width: 1200px) { .tiers { grid-template-columns:3, 1fr; } }
 .tier {
   background: linear-gradient(180deg, var(--surf-2), var(--surf));
   border: 1px solid var(--line);
@@ -1645,15 +1645,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="right">All-in fees in EUR · excl. taxes. No "scope expansion" emails. The whole pricing model fits in one footnote.</div>
     </div>
 
+    <!-- SINGLE TIERS CONTAINER -->
     <div class="tiers">
+
+      <!-- TIER 1: VSME Basic -->
       <article class="tier reveal">
-        <div class="tier-badge">Micro-Enterprise First-timers</div>
+        <div class="tier-badge">Micro-Enterprise</div>
         <div class="tier-name">VSME Basic</div>
-        <div class="tier-title">Sustainability data, simplified</div>
-        <div class="tier-tag">For micro-enterprises (< 10 employees) in EU value chains.</div>
+        <div class="tier-title">Sustainability data, simplified.</div>
+        <div class="tier-tag">For micro-enterprises (&lt; 10 employees) in EU value chains.</div>
         <div class="tier-price">
           <span class="currency">€</span>
-          <span class="amount">1,000</span>
+          <span class="amount">500</span>
           <span class="unit">/ all-in</span>
         </div>
         <ul class="tier-features">
@@ -1661,22 +1664,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>Company profile & governance snapshot</li>
           <li>Environmental KPIs (energy, emissions)</li>
           <li>Social KPIs (workforce, diversity basics)</li>
+          <li>PDF report + structured data export</li>
           <li><strong>3-day delivery</strong></li>
           <li>1 round of revisions</li>
-          <li>Email support</li>
+          <li>Email support (7 days)</li>
         </ul>
         <a href="#lead" class="btn">Start now <span class="arrow">→</span></a>
       </article>
 
-      <div class="tiers">
+      <!-- TIER 2: VSME Comprehensive -->
       <article class="tier reveal">
-        <div class="tier-badge">Small & Medium Enterprise First-timers</div>
+        <div class="tier-badge">SME Value Chain</div>
         <div class="tier-name">VSME Comprehensive</div>
         <div class="tier-title">Full VSME for value chain SMEs.</div>
         <div class="tier-tag">For SMEs (10–250 employees) reporting to larger partners.</div>
         <div class="tier-price">
           <span class="currency">€</span>
-          <span class="amount">2,000</span>
+          <span class="amount">1,500</span>
           <span class="unit">/ all-in</span>
         </div>
         <ul class="tier-features">
@@ -1684,58 +1688,69 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>VSME Comprehensive (40+ datapoints)</li>
           <li>Sector-specific disclosures</li>
           <li>Scope 1 & 2 emissions calculation</li>
-          <li>Value chain mapping (Tier 1)</li>
-          <li><strong>7-day delivery</strong></li>
-          <li>2 round of revisions</li>
-          <li>Email support</li>
+          <li>Value chain mapping (Tier 1 suppliers)</li>
+          <li>PDF + structured data + Excel backup</li>
+          <li><strong>5-day delivery</strong></li>
+          <li>2 rounds of revisions</li>
+          <li>Priority support (14 days)</li>
         </ul>
         <a href="#lead" class="btn">Start now <span class="arrow">→</span></a>
       </article>
-        
-    <div class="tiers">
+
+      <!-- TIER 3: CSRD Entry (Quickstart) -->
       <article class="tier reveal">
         <div class="tier-badge">First-timers</div>
         <div class="tier-name">Climate Quickstart</div>
-        <div class="tier-title">Get one standard done — fast.</div>
-        <div class="tier-tag">For companies just starting voluntary CSRD reporting.</div>
+        <div class="tier-title">Start with what matters.</div>
+        <div class="tier-tag">For companies just beginning mandatory CSRD reporting.</div>
         <div class="tier-price">
           <span class="currency">€</span>
           <span class="amount">3,000</span>
           <span class="unit">/ all-in</span>
         </div>
         <ul class="tier-features">
-          <li>ESRS 1 (General Requirements)</li>
-          <li>ESRS 2 (General Disclosure)</li>
+          <li><strong>Double Materiality Assessment</strong> (impact + financial)</li>
+          <li>Materiality matrix & stakeholder map</li>
+          <li>ESRS 2 General Disclosures (complete)</li>
+          <li>IRO identification (Impacts, Risks, Opportunities)</li>
+          <li>Policy & governance narrative</li>
+          <li>Gap analysis vs. full topical standards</li>
+          <li>PDF report + structured outline</li>
           <li><strong>14-day delivery</strong></li>
           <li>1 round of revisions</li>
-          <li>Email support</li>
+          <li>Email support (14 days)</li>
         </ul>
         <a href="#lead" class="btn">Start now <span class="arrow">→</span></a>
       </article>
 
+      <!-- TIER 4: CSRD Core (Recommended) -->
       <article class="tier recommended reveal">
         <div class="tier-badge">Best value</div>
         <div class="tier-name">Core Compliance</div>
-        <div class="tier-title">All material standards, end to end.</div>
-        <div class="tier-tag">For mid-size companies under voluntary or mandatory scope.</div>
+        <div class="tier-title">Material standards, end to end.</div>
+        <div class="tier-tag">For mid-size companies under mandatory CSRD scope.</div>
         <div class="tier-price">
           <span class="currency">€</span>
-          <span class="amount">6,000</span>
+          <span class="amount">5,000</span>
           <span class="unit">/ all-in</span>
         </div>
         <ul class="tier-features">
-          <li>ESRS 1 + ESRS 2 (General Requirement & General Disclosure)</li>
-          <li>ESRS E1–E5 (Climate Change, Pollution, Water, Biodiv, Resource)</li>
-          <li>ESRS S1–S4 (Workforce, Value Chain, Communities, Consumers)</li>
-          <li>ESRS G1 (Business Conduct)</li>
-          <li class="plus">Everything in Quickstart</li>
+          <li>Everything in Quickstart</li>
+          <li><strong>All material topical standards</strong> identified & disclosed</li>
+          <li>E1 Climate Change (if material)</li>
+          <li>S1 Own Workforce (if material)</li>
+          <li>G1 Business Conduct (if material)</li>
+          <li>Scope 1, 2 & 3 emissions (where data available)</li>
+          <li>Metrics, targets & transition plan</li>
+          <li>PDF + digital-ready structured data</li>
           <li><strong>21-day delivery</strong></li>
           <li>2 rounds of revisions</li>
-          <li>Priority support</li>
+          <li>Priority support (30 days)</li>
         </ul>
         <a href="#lead" class="btn btn-primary">Get full coverage <span class="arrow">→</span></a>
       </article>
 
+      <!-- TIER 5: CSRD Full Assurance -->
       <article class="tier reveal">
         <div class="tier-badge">Complex orgs</div>
         <div class="tier-name">Full Assurance</div>
@@ -1747,26 +1762,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="unit">/ all-in</span>
         </div>
         <ul class="tier-features">
-          <li>ESRS 1 + ESRS 2 (General Requirement & General Disclosure)</li>
-          <li>ESRS E1–E5 (Climate Change, Pollution, Water, Biodiv, Resource)</li>
-          <li>ESRS S1–S4 (Workforce, Value Chain, Communities, Consumers)</li>
-          <li>ESRS G1 (Business Conduct)</li>
-          <li>Double Materiality Assessment (Including all IRO methods)</li>
-          <li class="plus">Everything in Core</li>
+          <li>Everything in Core</li>
+          <li><strong>All 12 topical standards</strong> (material + non-material justification)</li>
+          <li>Full IRO methodology with quantitative scoring</li>
+          <li>Value chain deep-dive (Tier 2+ suppliers)</li>
+          <li>Scenario analysis & climate resilience</li>
+          <li><strong>Audit-ready evidence pack</strong> (traceability for every datapoint)</li>
+          <li>XBRL tagging guidance / digital submission support</li>
           <li><strong>35-day delivery</strong></li>
-          <li>7 revisions</li>
+          <li>3 rounds of revisions</li>
+          <li>Dedicated support (60 days)</li>
+          <li>Pre-audit review call</li>
         </ul>
         <a href="#lead" class="btn">Maximum protection <span class="arrow">→</span></a>
       </article>
-    </div>
+
+    </div> <!-- /tiers -->
 
     <p class="pricing-note reveal">
       <span class="icon">i</span>
-      <span><strong>All prices include drafting,  review, and formatting.</strong> No hidden fees. No hourly rates. No "scope expansion" emails. Pay 50% to start, 50% on delivery.</span>
+      <span><strong>All prices include drafting, review, and formatting.</strong> No hidden fees. No hourly rates. No "scope expansion" emails. Pay 50% to start, 50% on delivery.</span>
     </p>
   </div>
 </section>
-
 <!-- ============== WHY ============== -->
 <section class="why" id="why">
   <div class="wrap">
