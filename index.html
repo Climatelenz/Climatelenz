@@ -1354,8 +1354,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <h1>
       Your CSRD report.<br />
-      Delivered in <span class="rotator" id="rotDays" aria-live="polite"><span class="rot-inner">14 days.</span></span><br />
-      For <span class="rotator" id="rotPrice" aria-live="polite"><span class="rot-inner">€3,000.</span></span>
+      Delivered in <span class="rotator" id="rotDays" aria-live="polite"><span class="rot-inner">3 -35 days.</span></span><br />
+      For <span class="rotator" id="rotPrice" aria-live="polite"><span class="rot-inner">€1,000 - €35,000.</span></span>
     </h1>
 
     <div class="tier-pips" id="tierPips">
@@ -1381,7 +1381,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="hero-strip reveal">
       <div>
         <div>
-          <div class="v"><span class="tab" data-count="15" data-prefix="4–">14–35</span> <span class="g">days</span></div>
+          <div class="v"><span class="tab" data-count="15" data-prefix="4–">3–35</span> <span class="g">days</span></div>
           <div class="k">average turnaround</div>
         </div>
         <svg class="spark" viewBox="0 0 60 36" fill="none">
@@ -1988,6 +1988,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   var TWEAKS = /*EDITMODE-BEGIN*/{
     "rotateHero": true,
     "rotationMs": 2400,
+    "includeVSMEB": true,
+    "includeVSMEC": true,
     "includeQuickstart": true,
     "includeCore": true,
     "includeFull": true,
@@ -2001,6 +2003,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   // HERO ROTATOR
   // ============================================================
   var TIERS = [
+    { id: 'q', name: 'VSME Basic', days: '3 days.',  price: '\u20AC1,000.',  flag: 'includeVSMEB' },
+    { id: 'q', name: 'VSME Comprehensive', days: '5 days.',  price: '\u20AC2,000.',  flag: 'includeVSMEC' },
     { id: 'q', name: 'Climate Quickstart', days: '14 days.',  price: '\u20AC3,000.',  flag: 'includeQuickstart' },
     { id: 'c', name: 'Core Compliance',    days: '21 days.',  price: '\u20AC6,000.',  flag: 'includeCore' },
     { id: 'f', name: 'Full Assurance',     days: '35 days.', price: '\u20AC10,000.', flag: 'includeFull' }
